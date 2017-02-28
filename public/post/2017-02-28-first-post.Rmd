@@ -1,0 +1,11 @@
+---
+title: First post
+author: Justin Millar
+date: '2017-02-28'
+categories:
+  - R
+tags:
+  - R Markdown
+---
+
+This is a placeholder (for now!)
