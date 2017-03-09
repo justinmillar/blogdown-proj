@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Justin Millar</title>
-    <link>https://example.com/post/index.xml</link>
+    <link>/post/index.xml</link>
     <description>Recent content in Posts on Justin Millar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>First post</title>
-      <link>https://example.com/post/2017-02-28-first-post/</link>
+      <link>/post/2017-02-28-first-post/</link>
       <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/2017-02-28-first-post/</guid>
+      <guid>/post/2017-02-28-first-post/</guid>
       <description>&lt;!-- BLOGDOWN-HEAD --&gt;
 
 

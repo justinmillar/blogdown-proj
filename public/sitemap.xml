@@ -4,7 +4,7 @@
     
     
     <url>
-      <loc>https://example.com/post/2017-02-28-first-post/</loc>
+      <loc>/post/2017-02-28-first-post/</loc>
       <lastmod>2017-02-28T00:00:00+00:00</lastmod>
     </url>
     
@@ -12,7 +12,7 @@
     
     
     <url>
-      <loc>https://example.com/tags/academic/</loc>
+      <loc>/tags/academic/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -20,7 +20,7 @@
     
     
     <url>
-      <loc>https://example.com/post/</loc>
+      <loc>/post/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -28,7 +28,7 @@
     
     
     <url>
-      <loc>https://example.com/publication/</loc>
+      <loc>/publication/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -36,7 +36,7 @@
     
     
     <url>
-      <loc>https://example.com/publication/spatial-heterogeneity-burkina-faso/</loc>
+      <loc>/publication/spatial-heterogeneity-burkina-faso/</loc>
       <lastmod>2016-10-07T00:00:00+00:00</lastmod>
     </url>
     
@@ -44,7 +44,7 @@
     
     
     <url>
-      <loc>https://example.com/publication/bias-logit-regression/</loc>
+      <loc>/publication/bias-logit-regression/</loc>
       <lastmod>2015-08-20T00:00:00+00:00</lastmod>
     </url>
     
@@ -52,7 +52,7 @@
     
     
     <url>
-      <loc>https://example.com/publication/biogeochem-miss-trib/</loc>
+      <loc>/publication/biogeochem-miss-trib/</loc>
       <lastmod>2015-04-08T00:00:00+00:00</lastmod>
     </url>
     
@@ -60,7 +60,7 @@
     
     
     <url>
-      <loc>https://example.com/publication/trib-biogeography/</loc>
+      <loc>/publication/trib-biogeography/</loc>
       <lastmod>2014-09-12T00:00:00+00:00</lastmod>
     </url>
     
@@ -68,7 +68,7 @@
     
     
     <url>
-      <loc>https://example.com/publication/enzyme-activity/</loc>
+      <loc>/publication/enzyme-activity/</loc>
       <lastmod>2013-10-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -76,7 +76,7 @@
     
     
     <url>
-      <loc>https://example.com/publication_types/2/</loc>
+      <loc>/publication_types/2/</loc>
       <lastmod>2016-10-07T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -85,7 +85,7 @@
     
     
     <url>
-      <loc>https://example.com/categories/</loc>
+      <loc>/categories/</loc>
       <priority>0</priority>
     </url>
     
@@ -96,7 +96,7 @@
     
     
     <url>
-      <loc>https://example.com/</loc>
+      <loc>/</loc>
       <lastmod>2016-04-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -105,7 +105,7 @@
     
     
     <url>
-      <loc>https://example.com/publication_types/</loc>
+      <loc>/publication_types/</loc>
       <priority>0</priority>
     </url>
     
@@ -113,7 +113,7 @@
     
     
     <url>
-      <loc>https://example.com/categories/r/</loc>
+      <loc>/categories/r/</loc>
       <lastmod>2017-02-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -122,7 +122,7 @@
     
     
     <url>
-      <loc>https://example.com/tags/r-markdown/</loc>
+      <loc>/tags/r-markdown/</loc>
       <lastmod>2017-02-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -131,7 +131,7 @@
     
     
     <url>
-      <loc>https://example.com/tags/</loc>
+      <loc>/tags/</loc>
       <priority>0</priority>
     </url>
     
