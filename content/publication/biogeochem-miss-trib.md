@@ -23,4 +23,3 @@ url = "https://link.springer.com/article/10.1007%2Fs10533-015-0096-1"
 
 +++
 
-More detail can easily be written here using *Markdown* and $\rm \LaTeX$ math code.

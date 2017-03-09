@@ -23,4 +23,3 @@ url = "http://www.jove.com/video/50399/determination-microbial-extracellular-enz
 
 +++
 
-More detail can easily be written here using *Markdown* and $\rm \LaTeX$ math code.

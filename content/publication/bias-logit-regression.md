@@ -22,5 +22,3 @@ name = "Article Link"
 url = "http://malariajournal.biomedcentral.com/articles/10.1186/s12936-015-0966-y"
 
 +++
-
-More detail can easily be written here using *Markdown* and $\rm \LaTeX$ math code.

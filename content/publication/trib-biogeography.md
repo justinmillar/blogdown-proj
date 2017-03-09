@@ -22,5 +22,3 @@ name = "Article Link"
 url = "http://aem.asm.org/content/early/2014/09/08/AEM.01844-14"
 
 +++
-
-More detail can easily be written here using *Markdown* and $\rm \LaTeX$ math code.

@@ -29,5 +29,3 @@ name = "Shiny App #2"
 url = "https://denisvalle.shinyapps.io/burkina_faso_map"
 
 +++
-
-More detail can easily be written here using *Markdown* and $\rm \LaTeX$ math code.
