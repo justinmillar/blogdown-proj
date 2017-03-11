@@ -1,4 +1,4 @@
-baseurl = "https://justinmillar.com"
+baseurl = "http://justinmillar.com"
 title = "Justin Millar"
 copyright = "&copy; 2016 Justin Millar"
 theme = "hugo-academic"

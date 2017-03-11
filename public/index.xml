@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Justin Millar on Justin Millar</title>
-    <link>https://justinmillar.com/index.xml</link>
+    <link>http://justinmillar.com/index.xml</link>
     <description>Recent content in Justin Millar on Justin Millar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>First post</title>
-      <link>https://justinmillar.com/post/2017-02-28-first-post/</link>
+      <link>http://justinmillar.com/post/2017-02-28-first-post/</link>
       <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://justinmillar.com/post/2017-02-28-first-post/</guid>
+      <guid>http://justinmillar.com/post/2017-02-28-first-post/</guid>
       <description>&lt;!-- BLOGDOWN-HEAD --&gt;
 
 
@@ -32,46 +32,46 @@
     
     <item>
       <title>Spatial heterogeneity can undermine the effectiveness of country-wide test and treat policy for malaria: a case study from Burkina Faso</title>
-      <link>https://justinmillar.com/publication/spatial-heterogeneity-burkina-faso/</link>
+      <link>http://justinmillar.com/publication/spatial-heterogeneity-burkina-faso/</link>
       <pubDate>Fri, 07 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://justinmillar.com/publication/spatial-heterogeneity-burkina-faso/</guid>
+      <guid>http://justinmillar.com/publication/spatial-heterogeneity-burkina-faso/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bias in logistic regression due to imperfect diagnostic test results and practical correction approaches</title>
-      <link>https://justinmillar.com/publication/bias-logit-regression/</link>
+      <link>http://justinmillar.com/publication/bias-logit-regression/</link>
       <pubDate>Thu, 20 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://justinmillar.com/publication/bias-logit-regression/</guid>
+      <guid>http://justinmillar.com/publication/bias-logit-regression/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Particle-associated and cell-free extracellular enzyme activity in relation to nutrient status of large tributaries of the Lower Mississippi River</title>
-      <link>https://justinmillar.com/publication/biogeochem-miss-trib/</link>
+      <link>http://justinmillar.com/publication/biogeochem-miss-trib/</link>
       <pubDate>Wed, 08 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://justinmillar.com/publication/biogeochem-miss-trib/</guid>
+      <guid>http://justinmillar.com/publication/biogeochem-miss-trib/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Free-living and particle-associated bacterioplankton in large rivers of the Mississippi River Basin demonstrate biogeographic patterns</title>
-      <link>https://justinmillar.com/publication/trib-biogeography/</link>
+      <link>http://justinmillar.com/publication/trib-biogeography/</link>
       <pubDate>Fri, 12 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://justinmillar.com/publication/trib-biogeography/</guid>
+      <guid>http://justinmillar.com/publication/trib-biogeography/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Determination of Microbial Extracellular Enzyme Activity in Waters, Soils, and Sediments using High Throughput Microplate Assays</title>
-      <link>https://justinmillar.com/publication/enzyme-activity/</link>
+      <link>http://justinmillar.com/publication/enzyme-activity/</link>
       <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://justinmillar.com/publication/enzyme-activity/</guid>
+      <guid>http://justinmillar.com/publication/enzyme-activity/</guid>
       <description></description>
     </item>
     

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Justin Millar</title>
-    <link>https://justinmillar.com/post/index.xml</link>
+    <link>http://justinmillar.com/post/index.xml</link>
     <description>Recent content in Posts on Justin Millar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>First post</title>
-      <link>https://justinmillar.com/post/2017-02-28-first-post/</link>
+      <link>http://justinmillar.com/post/2017-02-28-first-post/</link>
       <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://justinmillar.com/post/2017-02-28-first-post/</guid>
+      <guid>http://justinmillar.com/post/2017-02-28-first-post/</guid>
       <description>&lt;!-- BLOGDOWN-HEAD --&gt;
 
 
