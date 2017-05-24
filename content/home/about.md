@@ -20,12 +20,12 @@ weight = 1
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "MSc in Biology"
+  course = "M.Sc. in Biology"
   institution = "University of Mississippi"
   year = 2013
 
 [[education.courses]]
-  course = "BSc in Ecology and Evolution"
+  course = "B.Sc. in Ecology and Evolution"
   institution = "Michigan State University"
   year = 2011
  
