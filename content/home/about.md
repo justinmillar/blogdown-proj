@@ -13,6 +13,7 @@ weight = 1
 [interests]
   interests = [
     "Quantitative Ecology",
+    "R Programming",
     "Bayesian Statistics",
     "Spatial Epidemiology"
   ]
