@@ -132,7 +132,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "google-scholar"
     icon_pack = "ai"
-    link = "//scholar.google.co.uk/citations?user=sIwtMXoAAAAJ"
+    link = "//scholar.google.com/citations?user=aAzQKLwAAAAJ&hl=en"
 
   [[params.social]]
     icon = "github"
