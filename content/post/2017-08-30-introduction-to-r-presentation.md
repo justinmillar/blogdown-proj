@@ -12,6 +12,8 @@ tags:
 
 This is a presentation that I gave at the UF R Meetups focused on getting started in R and RStudio. This was largely adapted [R lesson from Data Carpentry](http://www.datacarpentry.org/R-ecology-lesson/). 
 
-[link to pdf](pdf/intro-to-r.pdf)
+[link to pdf](/pdf/intro-to-r.pdf)
 
-<iframe src="pdf/intro-to-r.pdf" width="100%" height="600px"></iframe>
+<iframe src="/pdf/intro-to-r.pdf" width="100%" height="600px"></iframe>
+
+
