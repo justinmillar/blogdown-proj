@@ -10,10 +10,8 @@ tags:
   - R Meetup
 ---
 
-This is a presentation that I gave at the UF R Meetups focused on getting started in R and RStudio. This was largely adapted the [R lesson from Data Carpentry](http://www.datacarpentry.org/R-ecology-lesson/). 
+This is a presentation that I gave at the UF R Meetups focused on getting started in R and RStudio. This was largely adapted [R lesson from Data Carpentry](http://www.datacarpentry.org/R-ecology-lesson/). 
 
-[link to pdf](../data/intro-to-r.pdf)
+[link to pdf](pdf/intro-to-r.pdf)
 
-<object data="../data/intro-to-r.pdf" type="application/pdf" width="100%" height="600px">
-  <embed src="../data/intro-to-r.pdf" type="application/pdf" />
-</object>
+<iframe src="pdf/intro-to-r.pdf" width="100%" height="600px"></iframe>
