@@ -33,4 +33,4 @@ weight = 1
 
 # Biography
 
-Justin Millar is a graduate student (PhD) in [Denis Valle's lab](http://denisvalle.weebly.com/) at the University of Florida. His dissertation research is focused on developing novel models for understanding malaria epidemiology in order to promote data-driven decision making. Justin is also a co-manager of the [UF R Meetups](http://www.r-gators.com/).
+Justin Millar is a graduate student (PhD) in [Denis Valle's lab](http://denisvalle.weebly.com/) at the University of Florida. His dissertation research is focused on developing novel models for understanding malaria epidemiology in order to promote data-driven decision making. Justin is also a co-manager of the [UF R Meetups](http://www.r-gators.com).
