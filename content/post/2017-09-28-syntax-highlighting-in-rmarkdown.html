@@ -1,0 +1,22 @@
+---
+title: Syntax highlighting in RMarkdown
+author: Justin Millar
+date: '2017-09-28'
+slug: syntax-highlighting-in-rmarkdown
+categories: []
+tags: []
+---
+
+
+
+<p>Sample R code black:</p>
+<pre class="r"><code>library(ggplot2)
+
+centre &lt;- function(x, type, ...) {
+  switch(type,
+         mean = mean(x),
+         median = median(x),
+         trimmed = mean(x, trim = .1))
+}
+
+var &lt;- NULL</code></pre>
