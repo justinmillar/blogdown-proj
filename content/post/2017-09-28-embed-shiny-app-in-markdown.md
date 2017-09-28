@@ -11,7 +11,10 @@ Seeing if I can embed [this Shiny app](https://jjmillar.shinyapps.io/msat-cost-g
 
 <iframe src="https://jjmillar.shinyapps.io/msat-cost-graph" style="border: none; width: 100%; height: 900px"></iframe>
 
-Here is the code for creating the app:
+Seems to have worked! Unfortnately the sidebar and main panels seem to stack regardless of the width, still looking for a solution for this. Maybe there is a way to scale iframes?
+
+
+If you're interested, here is the code for creating the app:
 
 ```
 # Shiny app for cost tool graph
