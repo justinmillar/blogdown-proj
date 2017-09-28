@@ -9,4 +9,4 @@ tags: []
 
 Seeing if I can embed a Shiny app:
 
-<iframe src="https://jjmillar.shinyapps.io/msat-cost-graph" style="border: none; width: 440px; height: 900px"></iframe>
+<iframe src="https://jjmillar.shinyapps.io/msat-cost-graph" style="border: none; width: "85%"; height: 900px"></iframe>
