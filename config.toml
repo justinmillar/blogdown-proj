@@ -21,7 +21,7 @@ defaultContentLanguageInSubdir = false
 
 [params]
   name = "Justin Millar"
-  role = "PhD Student"
+  role = "PhD Candidate"
   organization = "University of Florida"
   organization_url = ""
   avatar = "portrait.jpg"
