@@ -170,6 +170,11 @@ defaultContentLanguageInSubdir = false
   name = "Contact"
   url = "#contact"
   weight = 5
+  
+[[menu.main]]
+  name = "STA 6093"
+  url = "https://sta-jjm.netlify.com/"
+  weight = 6
 
 # Taxonomies.
 [taxonomies]
