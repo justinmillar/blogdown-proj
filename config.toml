@@ -173,7 +173,7 @@ defaultContentLanguageInSubdir = false
   
 [[menu.main]]
   name = "STA 6093"
-  url = "https://sta-jjm.netlify.com/"
+  url = "https://sta6093.netlify.com/"
   weight = 6
 
 # Taxonomies.
