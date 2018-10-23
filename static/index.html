@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>R-Ladies Gainesvile</title>
+    <meta charset="utf-8">
+    <meta name="author" content="  Justin Millar   <span>&lt;i class="fab  fa-twitter faa-float animated "&gt;&lt;/i&gt;@justinjmillar</span>" />
+    <meta name="date" content="2018-10-23" />
+    <link href="libs/remark-css/kunoichi.css" rel="stylesheet" />
+    <link href="libs/remark-css/ninjutsu.css" rel="stylesheet" />
+    <link href="libs/font-awesome-animation/font-awesome-animation-emi.css" rel="stylesheet" />
+    <script src="libs/fontawesome/js/fontawesome-all.min.js"></script>
+    <link rel="stylesheet" href="assets\ninpo.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# R-Ladies Gainesvile
+## Intro. to blogdown
+### <br><br>Justin Millar <br><br><span>&lt;i class="fab  fa-twitter faa-float animated "&gt;&lt;/i&gt;@justinjmillar</span>
+### <br>2018-10-23<br>
+
+---
+
+
+
+
+class: middle center inverse bg-main1
+
+# Everyone leaves with a working website
+
+--
+
+## (hopefully)
+
+---
+
+layout: false
+class: split-33 with-thick-border
+
+.column.bg-main1[.content.vmiddle[
+
+# What is blogdown? 
+]]
+.column[.content[
+
+## - Blogdown is a package in R used to make "static" websites
+&lt;br&gt;&lt;br&gt;
+## - It does not require knowledge of HTML/CSS/JavaScript etc.
+&lt;br&gt;&lt;br&gt;
+## - Use a program call Hugo to create HTML files from Markdown (.md) and RMarkdown (.Rmd) files
+&lt;br&gt;&lt;br&gt;
+## We'll rely on [this great book to get started with blogdown](https://bookdown.org/yihui/blogdown/).
+]]
+
+---
+
+class: middle inverse bg-main1
+
+# Getting started 
+
+### First we'll install the package:
+
+```r
+# Install from CRAN
+install.packages("blogdown")
+
+# Install development verison from GitHub
+devtools::install_github("rstudio/blogdown")
+```
+
+### Then we install Hugo using the `blogdown` package
+
+```r
+blogdown::install_hugo()
+```
+
+---
+
+class: middle inverse bg-teal
+
+# A mininal website
+
+
+```r
+blogdown::new_site()
+```
+
+
+#### Blogdown should have made a bunch of files/folders, and your website should be displayed in the Viewer tab.
+
+### Three key files/directories:
+
+### - `config.toml`
+
+### - `content`
+
+### - `public`
+
+
+---
+
+layout: false
+class: split-33 with-thick-border
+
+.column.bg-main1[.content.vmiddle[
+
+# The configuration file: `config.toml` 
+]]
+
+.column[.content[
+### The `config` file is used to to set the global configurations of your site:
+
+```
+baseurl = "/"
+languageCode = "en-us"
+title = "A Hugo website"
+theme = "hugo-lithium"
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+[[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/rstudio/blogdown"
+[[menu.main]]
+    name = "Twitter"
+    url = "https://twitter.com/rstudio"
+```
+### Check out [this chapter](https://bookdown.org/yihui/blogdown/configuration.html) for more info on this file.
+
+]]
+
+---
+
+layout: false
+class: split-33 with-thick-border
+
+.column.bg-blue[.content.vmiddle[
+
+# The content folder 
+]]
+
+.column[.content[
+### The `content` folder contains all of the Markdown and RMarkdown files that will make up the information in our pages:
+
+```
+├── _index.md
+├── about.md
+├── vitae.md
+├── post/
+│   ├── 2017-01-01-foo.Rmd
+│   ├── 2017-01-02-bar.md
+│   └── ...
+└── ...
+```
+
+### These cheatsheets for using Markdown and [RMarkdown](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) are really helpful.
+
+]]
+
+---
+
+layout: false
+class: split-33 with-thick-border
+
+.column.bg-red[.content.vmiddle[
+
+# The public folder 
+]]
+
+.column[.content[
+### The `public` folder is where Hugo does it's magic, taking using the `config` file and `content` folder to create your website.
+
+&lt;br&gt;&lt;br&gt;
+
+### If you just want to look at your site locally (as in, the files located on your computer), you'll want to open the `index.html` file in the public folder using a web browser.
+
+&lt;br&gt;&lt;br&gt;
+
+### Later we will see different ways of using the public folder to host your website online.
+
+]]
+
+---
+
+layout: false
+class: split-33 with-thick-border
+
+.column.bg-orange[.content.vmiddle[
+
+# Custom themes 
+]]
+
+.column[.content[
+
+### There are many different themes Hugo can use to create your site:
+&lt;br&gt;&lt;br&gt;
+## [https://themes.gohugo.io/](https://themes.gohugo.io/)
+### In my experience, the easist way to use a new theme is to start from scratch. Find a theme from the link above and pass the GitHub repository name to blogdown:
+
+
+```r
+blogdown::new_site(theme = "gcushen/hugo-academic")
+```
+
+
+### You can also use `blogdown::install_theme` to add a theme to an existing site, but this may screw up you config file.
+
+&lt;br&gt;&lt;br&gt;
+
+### Also, it's best to start off with a simpler theme in the beginning, which will be easier to convert down the line.
+
+]]
+
+---
+
+layout: false
+class: split-25 with-thick-border
+
+.column.bg-indigo[.content.vmiddle[
+
+# Writing a new post/page 
+]]
+
+.column[.content[
+
+### You'll notice that `blogdown` added some useful RStudio Addins, including "New Post" which runs:
+
+```r
+blogdown::new_post_addin()
+```
+
+### Running this function will launch a Shiny app were we can specific some information about out posts, which will get placed in the YAML:
+
+```
+---
+title: Example post
+author: My Name
+date: '2018-10-23'
+slug: example-post
+categories:
+  - R
+tags:
+  - R Markdown
+---
+```
+### This is also where we can choose between an RMarkdown file (.Rmd) and a regular Markdown file (.md)
+
+]]
+
+---
+
+
+layout: false
+class: split-25 with-thick-border
+
+.column.bg-green[.content.vmiddle[
+
+# Deploying your site
+]]
+
+.column[.content[
+
+### Up to this point, our website only exists on our computer. There are [many options for deploying your site](https://bookdown.org/yihui/blogdown/deployment.html), but one of the easiest (and free) ways is to use Netlify
+
+&lt;br&gt;&lt;br&gt;
+
+### We'll create a free account (can use Google, Github, etc.), then drag the `public` folder into the Deploy box.
+&lt;br&gt;&lt;br&gt;
+
+### Next we can change the Domain to something more appropriate under Domain Settings
+&lt;br&gt;&lt;br&gt;
+### Note that we'll have to re-drag the `public` folder each time we a change to the site. If you're familiar with git and GitHub, it's better to keep the site in a GitHub repo and point Netlify to the `public` folder. Netlify will automatically reconstruct the site when ever you make a push to the repo. 
+
+]]
+
+---
+layout: false
+class: split-25 with-thick-border
+
+.column.bg-amber[.content.vmiddle[
+
+# Using the static folder
+
+]]
+
+.column[.content[
+
+### You can also place files in the static folder, which will then be accessible using your URL. For example, I can place `example-data.csv` in the static folder and then that file can be downloaded at www.my-site.com/example-data.csv. 
+
+&lt;br&gt;&lt;br&gt;
+
+### WARNING: Hugo will place the files in `static` and place it into `public` when it creates the site, however it has some funny tendencies to overwrite files.
+
+### This means you should be **extra careful** that there are not similarly named files in the `content` and `static` folders.
+&lt;br&gt;&lt;br&gt;
+### I've also have some issues with certain themes with the `static` folder, so it may take some troubleshooting
+
+]]
+
+---
+
+class: middle center bg-main1
+
+# Thanks!!
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
