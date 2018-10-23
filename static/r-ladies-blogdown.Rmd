@@ -38,11 +38,11 @@ class: split-33 with-thick-border
 ]]
 .column[.content[
 
-## - Blogdown is a package in R used to make "static" websites
+## Blogdown is a package in R used to make "static" websites
 <br><br>
-## - It does not require knowledge of HTML/CSS/JavaScript etc.
+## It does not require knowledge of HTML/CSS/JavaScript etc.
 <br><br>
-## - Use a program call Hugo to create HTML files from Markdown (.md) and RMarkdown (.Rmd) files
+## Use a program call Hugo to create HTML files from Markdown (.md) and RMarkdown (.Rmd) files
 <br><br>
 ## We'll rely on [this great book to get started with blogdown](https://bookdown.org/yihui/blogdown/).
 ]]
@@ -256,7 +256,7 @@ class: split-25 with-thick-border
 <br><br>
 
 ### We'll create a free account (can use Google, Github, etc.), then drag the `public` folder into the Deploy box.
-<br><br>
+<br>
 
 ### Next we can change the Domain to something more appropriate under Domain Settings
 <br><br>
