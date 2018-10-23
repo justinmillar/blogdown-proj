@@ -1,5 +1,5 @@
 ---
-title: "R-Ladies Gainesvile"
+title: "R-Ladies Gainesville"
 subtitle: "Intro. to blogdown"
 author: "<br><br>Justin Millar <br><br>`r anicon::faa('twitter', animate='float',rtext='@justinjmillar')`  <br><br>`r anicon::faa('github', animate='float',rtext='@justinmillar')` "
 date: "<br>2018-10-23<br>"
