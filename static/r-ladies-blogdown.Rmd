@@ -294,4 +294,4 @@ class: middle center bg-main1
 
 # Thanks!!
 
-
+<iframe src="https://giphy.com/embed/42JneosEPBdCSmX7XZ" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/eskimo-eskie-eskimodog-42JneosEPBdCSmX7XZ"> </a></p>
