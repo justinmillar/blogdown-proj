@@ -1,0 +1,56 @@
+---
+title: 'Tidy Tuesday: Incarenation Trends'
+author: ''
+date: '2019-01-22'
+slug: tidy-tuesday-incarenation-trends
+categories:
+  - blog
+tags: []
+header:
+  caption: ''
+  image: ''
+highlight: yes
+math: no
+draft: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = T)
+```
+
+So here goes my first stab at [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday), and it looks like I'm starting off with a dozy. This week's day comes from [The Vera Institute](https://github.com/vera-institute/incarceration_trends), and focuses incarcentations rates. This is certainly a senstive topic, and one that I do not have a strong enough background in to draw meaningfulful conclusions. So my plan for this week will be to focus on data tidying and exploratory analysis, and hold off on inferential statistics for a future post. 
+
+Also, following David Robinson's lead, 
+
+### Getting started
+
+This week there are actually *five* datasets, which based on what I've seen before is pretty abnormal. I'll start off with the summarized data first
+
+```{r libs, message=FALSE, warning=FALSE}
+library(tidyverse)
+ggthemr::ggthemr('flat')
+```
+
+```{r sum-data, message=FALSE}
+prison_sum <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-01-22/prison_summary.csv")
+pretrial_sum <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-01-22/pretrial_summary.csv")
+```
+
+These to data contain the same types of (data, year, urbanicty, demography, and incidence per 100,000) for the prison population and pre-trial incarenation rates. The `skim()` function from the [skimr](https://github.com/ropensci/skimr) package is a nice way to get some summary information: 
+
+```{r}
+skimr::skim(prison_sum)
+skimr::skim(pretrial_sum)
+```
+
+Here we see that the possible values for `prison_sum$pop_category` are `r unique(prison_sum$pop_category)` and for `pretrial_sum$pop_category` are `r unique(pretrial_sum$pop_category)`. Also the `prison_sum` data goes from `r min(prison_sum$year)` to `r max(prison_sum$year)`, while the `pretrial_sum` data goes from `r min(pretrial_sum$year)` to `r max(pretrial_sum$year)`. 
+
+Let's keep them separate for now and move onto some plotting:
+
+```{r}
+ggplot(prison_sum, aes(year, rate_per_100000, color = pop_category)) +
+  geom_line() +
+  facet_wrap(~ urbanicity)
+
+```
+

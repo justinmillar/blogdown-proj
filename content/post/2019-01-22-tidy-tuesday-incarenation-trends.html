@@ -1,0 +1,71 @@
+---
+title: 'Tidy Tuesday: Incarenation Trends'
+author: ''
+date: '2019-01-22'
+slug: tidy-tuesday-incarenation-trends
+categories:
+  - blog
+tags: []
+header:
+  caption: ''
+  image: ''
+highlight: yes
+math: no
+draft: TRUE
+---
+
+
+
+<p>So here goes my first stab at <a href="https://github.com/rfordatascience/tidytuesday">Tidy Tuesday</a>, and it looks like I’m starting off with a dozy. This week’s day comes from <a href="https://github.com/vera-institute/incarceration_trends">The Vera Institute</a>, and focuses incarcentations rates. This is certainly a senstive topic, and one that I do not have a strong enough background in to draw meaningfulful conclusions. So my plan for this week will be to focus on data tidying and exploratory analysis, and hold off on inferential statistics for a future post.</p>
+<p>Also, following David Robinson’s lead,</p>
+<div id="getting-started" class="section level3">
+<h3>Getting started</h3>
+<p>This week there are actually <em>five</em> datasets, which based on what I’ve seen before is pretty abnormal. I’ll start off with the summarized data first</p>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre class="r"><code>prison_sum &lt;- read_csv(&quot;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-01-22/prison_summary.csv&quot;)
+pretrial_sum &lt;- read_csv(&quot;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-01-22/pretrial_summary.csv&quot;)</code></pre>
+<p>These to data contain the same types of (data, year, urbanicty, demography, and incidence per 100,000) for the prison population and pre-trial incarenation rates. The <code>skim()</code> function from the <a href="https://github.com/ropensci/skimr">skimr</a> package is a nice way to get some summary information:</p>
+<pre class="r"><code>skimr::skim(prison_sum)</code></pre>
+<pre><code>## Skim summary statistics
+##  n obs: 1000 
+##  n variables: 4 
+## 
+## ── Variable type:character ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+##      variable missing complete    n min max empty n_unique
+##  pop_category       0     1000 1000   4  15     0        9
+##    urbanicity       0     1000 1000   5   9     0        4
+## 
+## ── Variable type:integer ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+##  variable missing complete    n    mean   sd   p0  p25  p50  p75 p100
+##      year       0     1000 1000 1999.73 9.25 1983 1992 2000 2008 2015
+##      hist
+##  ▇▇▇▇▇▇▇▇
+## 
+## ── Variable type:numeric ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+##         variable missing complete    n   mean     sd   p0    p25    p50
+##  rate_per_100000       0     1000 1000 674.95 641.13 4.95 132.15 521.48
+##     p75    p100     hist
+##  907.38 2687.84 ▇▅▃▂▁▁▁▁</code></pre>
+<pre class="r"><code>skimr::skim(pretrial_sum)</code></pre>
+<pre><code>## Skim summary statistics
+##  n obs: 552 
+##  n variables: 4 
+## 
+## ── Variable type:character ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+##      variable missing complete   n min max empty n_unique
+##  pop_category       0      552 552   4   6     0        3
+##    urbanicity       0      552 552   5   9     0        4
+## 
+## ── Variable type:integer ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+##  variable missing complete   n   mean    sd   p0  p25    p50  p75 p100
+##      year       0      552 552 1992.5 13.29 1970 1981 1992.5 2004 2015
+##      hist
+##  ▇▇▇▇▇▇▇▇
+## 
+## ── Variable type:numeric ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+##         variable missing complete   n   mean    sd   p0   p25   p50    p75
+##  rate_per_100000       0      552 552 138.97 123.6 3.93 44.07 93.31 216.53
+##    p100     hist
+##  456.47 ▇▅▂▂▂▁▁▁</code></pre>
+<p>Here we see that in prison dataset there are Black, Female, Male, Other, Total, White, Asian, Latino, Native American distinct values for <code>pop_category</code>, and only</p>
+</div>
