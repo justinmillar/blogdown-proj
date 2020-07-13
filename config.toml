@@ -1,6 +1,6 @@
 baseurl = "http://justinmillar.com"
 title = "Justin Millar"
-copyright = "&copy; 2017 Justin Millar"
+copyright = "&copy; 2020 Justin Millar"
 theme = "hugo-academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
@@ -21,13 +21,13 @@ defaultContentLanguageInSubdir = false
 
 [params]
   name = "Justin Millar"
-  role = "PhD Candidate"
-  organization = "University of Florida"
+  role = "Postdoctoral Research Scientist"
+  organization = "University of Oxford"
   organization_url = ""
   avatar = "portrait.jpg"
-  email = "jjmillar@ufl.edu"
-  address = "409 McCarty C"
-  phone = "248-229-8782"
+  email = "justin.millar[at]bdi.ox.ac.uk"
+  address = "Big Data Institute"
+  phone = ""
 
   # Enable Keybase in Contact section by entering your keybase.io username.
   keybase = ""
@@ -121,14 +121,9 @@ defaultContentLanguageInSubdir = false
   #   Full list: https://jpswalsh.github.io/academicons/
 
   [[params.social]]
-    icon = "envelope"
-    icon_pack = "fa"
-    link = "mailto:jjmillar@ufl.edu"
-
-  [[params.social]]
-    icon = "researchgate"
+    icon = "twitter"
     icon_pack = "ai"
-    link = "//researchgate.net/profile/Justin_Millar"
+    link = "//twitter.com/justinjmillar"
 
   [[params.social]]
     icon = "google-scholar"
@@ -140,6 +135,10 @@ defaultContentLanguageInSubdir = false
     icon_pack = "fa"
     link = "//github.com/justinmillar"
 
+  [[params.social]]
+    icon = "envelope"
+    icon_pack = "fa"
+    link = "mailto:justin.millar@bdi.ox.ac.uk"
 
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the

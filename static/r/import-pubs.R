@@ -135,4 +135,5 @@ out_fold   <- "content/publication/"
 
 bibtex_2academic(bibfile   = my_bibfile, 
                  outfold   = out_fold, 
-                 abstract  = FALSE)
+                 abstract  = TRUE, 
+                 overwrite = TRUE)
