@@ -12,13 +12,19 @@ weight = 1
 # List your academic interests.
 [interests]
   interests = [
-    "Quantitative Ecology",
-    "R Programming",
+    "Spatial Epidemiology",
     "Bayesian Statistics",
-    "Spatial Epidemiology"
+    "R Programming",
+    "Quantitative Ecology"
   ]
 
 # List your qualifications (such as academic degrees).
+[[education.courses]]
+  course = "Ph.D. in Epidemiology"
+  institution = "University of Florida"
+  year = 2019
+
+
 [[education.courses]]
   course = "M.Sc. in Biology"
   institution = "University of Mississippi"
@@ -33,6 +39,6 @@ weight = 1
 
 # Biography
 
-Justin Millar is a doctoral candidate in [Denis Valle's lab](http://denisvalle.weebly.com/) at the University of Florida. His dissertation research is focused on developing novel models for understanding malaria epidemiology in order to promote data-driven decision making. Justin is also a co-manager of the [UF R Meetups](http://www.r-gators.com) and a certified [Software](https://software-carpentry.org/) and [Data Carpentry](http://www.datacarpentry.org/) instructor. 
+Justin is a postdoctoral research scientist with the [Malaria Atlas Project]() at the University of Oxford's [Big Data Institute](). His research focuses on high resolution geospatial modelling of malaria prevalence and incidence as part of the WHO's *High burden to high impact* initiative. 
 
 [Check out my CV.](/#cv)
