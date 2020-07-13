@@ -120,9 +120,10 @@ defaultContentLanguageInSubdir = false
   #
   #   Full list: https://jpswalsh.github.io/academicons/
 
+  
   [[params.social]]
     icon = "twitter"
-    icon_pack = "ai"
+    icon_pack = "fa"
     link = "//twitter.com/justinjmillar"
 
   [[params.social]]
